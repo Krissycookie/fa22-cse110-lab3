@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE110 Project Meeting #1</title>
+    <link rel="icon" href="/thinkingemoji.png">
+</head>
+<body>
+    <header>
+        <h1>CSE110 Project Meeting Minutes #1</h1>
+        <h3>10/3/22</h3>
+        <img src="/work.gif" alt="work gif">
+        <figure>
+            <figcaption>Background Music:</figcaption>
+            <audio controls src="/slow-motion.mp3"></audio>
+        </figure>
+        <h2>Agenda</h2>
+        <nav>
+            <ol>
+                <li><a href="#attendence-list">Attendance List</a></li>
+                <li><a href="#introductions">Introductions</a></li>
+                <li><a href="#collaboration">Collaboration</a></li>
+                <li><a href="#questions/comments">Questions/Comments</a></li>
+                <li><a href="#contact-information">Contact Information</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 id="attendence-list">Attendance List</h2>
+            <ul>
+                <li><input type="checkbox" /> Team Lead</li>
+                <li><input type="checkbox" /> Member 1</li>
+                <li><input type="checkbox" /> Member 2</li>
+                <li><input type="checkbox" /> Member 3</li>
+            </ul>
+        </section>
+        <h2 id="introductions">Introductions</h2>
+        <p>
+            Please tell us your <b>name</b>, <b>year</b>, <b>major</b>, and <b>some of your hobbies</b>.
+            In addition, to get to know everyone better, please tell us <strong>two truths and one lie</strong>!
+        </p>
+        <h2 id="collaboration">Collaboration</h2>
+        <p>
+            How can we improve <em>communication</em> within our group?
+            <br><br>
+            What is most important when working in a group setting?
+            <br><br>
+            What are your <i>preferred</i> roles?
+        </p>
+
+        <h2 id="questions/comments">Questions/Comments</h2>
+        <div> Now is the time for any additional questions or comments!<br><br></div>
+        <hr />
+        <h3 id="contact-information">Contact Information</h3>
+        <form onsubmit="alert('Thank you!')">
+            <fieldset>
+                <legend>Get in Contact:</legend>
+                <div>
+                    <label for="name">Preferred Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Name">
+                </div>
+                <div>
+                    <label for="email">Email Address: </label>
+                    <input type="text" id="email" placeholder="Enter Email Address">
+                </div>
+                <div>
+                    <label for="phone">Phone Number: </label>
+                    <input type="tel" id="phone" name="phone" placeholder="(999)-999-9999">
+                </div>
+
+            </fieldset>
+
+            <br />
+            <label for="next-free-day">When are you free?</label>
+            <input list="days-of-week" id="next-free-day" name="next-free-day">
+
+            <datalist id="days-of-week">
+                <option value="Monday"></option>
+                <option value="Tuesday"></option>
+                <option value="Wednesday"></option>
+                <option value="Thursday"></option>
+                <option value="Friday"></option>
+                <option value="Saturday"></option>
+                <option value="Sunday"></option>
+            </datalist>
+            <br><br>
+            <label for="preferred-coding-language">Choose your preferred coding language:</label>
+            <select name="coding-languages" id="preferred-coding-language">
+                <option value="">Choose an option</option>
+                <option value="c++">C++</option>
+                <option value="c#">C#</option>
+                <option value="javascript">Javascript</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="swift">Swift</option>
+            </select>
+            <br><br>
+
+            <fieldset>
+                <legend>Choose your favorite drink:</legend>
+                <div>
+                    <input type="radio" id="water" name="drink" value="water">
+                    <label for="water">Water</label>
+                </div>
+                <div>
+                    <input type="radio" id="tea" name="drink" value="tea">
+                    <label for="tea">Tea</label>
+                </div>
+                <div>
+                    <input type="radio" id="coffee" name="drink" value="coffee">
+                    <label for="coffee">Coffee</label>
+                </div>
+            </fieldset>
+            <br><br>
+
+            <label for="additionalcomments"><b>Anything else you want to let us know?</b></label>
+            <br><br>
+            <textarea id="additionalcomments" name="additionalcomments" rows="5" columns="30">Tell us a little bit about yourself!
+            </textarea>
+            <br><br>
+            <button>Submit</button>
+            <br><br>
+        </form>
+        <label for="water-video">Relax a bit!<br></label>
+        <video controls width=250 src="/waterfall.mp4" alt="waterfall-video" name="water-video">
+        </video>
+        <div><br></div>
+    </main>
+    <footer>
+        <span>Created by Kristy Chan<br><br></span>
+        <details>
+            <summary>Contact Me</summary>
+            Email: k4chan@ucsd.edu
+        </details>
+        <hr>
+    </footer>
+</body>
+</html>
