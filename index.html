@@ -5,43 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSE110 Project Meeting #1</title>
-    <link rel="icon" href="./thinkingemoji.png">
+    <link rel="icon" href="./files/thinkingemoji.png">
+    <link rel="stylesheet" type="text/css" href="lab3.css">
+    <style>
+        body
+        {
+            background-image:linear-gradient(to bottom right,#FFE5CC, #CCE5FF);
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>CSE110 Project Meeting Minutes #1</h1>
-        <h3>10/3/22</h3>
-        <img src="./work.gif" alt="work gif">
+        <h4>10/3/22</h4>
+        <div class="gif-box">
+            <img src="./files/work.gif" alt="work gif" class="work">
+            <img src="./files/penguin.gif" alt="penguin gif" class="work">
+            <img src="./files/capoo-work.gif" alt="capoo gif" class="work">
+        </div>
         <figure>
             <figcaption>Background Music:</figcaption>
-            <audio controls src="./slow-motion.mp3"></audio>
+            <audio controls src="./files/slow-motion.mp3"></audio>
         </figure>
         <h2>Agenda</h2>
         <nav>
-            <ol>
-                <li><a href="#attendence-list">Attendance List</a></li>
-                <li><a href="#introductions">Introductions</a></li>
-                <li><a href="#collaboration">Collaboration</a></li>
-                <li><a href="#questions/comments">Questions/Comments</a></li>
-                <li><a href="#contact-information">Contact Information</a></li>
+            <ol class="agenda">
+                <li class="a-list"><a href="#attendence-list">Attendance List</a></li>
+                <li class="a-list"><a href="#introductions">Introductions</a></li>
+                <li class="a-list"><a href="#collaboration">Collaboration</a></li>
+                <li class="a-list"><a href="#questions/comments" >Questions/Comments</a></li>
+                <li class="a-list" style="padding-bottom:20px;"><a href="#contact-information" >Contact Information</a></li>
             </ol>
         </nav>
     </header>
     <main>
-        <section>
-            <h2 id="attendence-list">Attendance List</h2>
-            <ul>
+        <h2 id="attendence-list">Attendance List</h2>
+        <section class="atten-box">
+            <ul class="attendance">
+                <li><input type="checkbox"> Team Lead</li>
                 <li><input type="checkbox"> Team Lead</li>
                 <li><input type="checkbox"> Member 1</li>
-                <li><input type="checkbox"> Member 2</li>
-                <li><input type="checkbox"> Member 3</li>
+            </ul>
+            <ul class="attendance">
+                <li><input type="checkbox"> Member 4</li>
+                <li><input type="checkbox"> Member 5</li>
+                <li><input type="checkbox"> Member 6</li>
+            </ul>
+            <ul class="attendance">
+                <li><input type="checkbox"> Member 7</li>
+                <li><input type="checkbox"> Member 8</li>
+                <li><input type="checkbox"> Member 9</li>
             </ul>
         </section>
         <h2 id="introductions">Introductions</h2>
-        <p>
-            Please tell us your <b>name</b>, <b>year</b>, <b>major</b>, and <b>some of your hobbies</b>.
-            In addition, to get to know everyone better, please tell us <strong>two truths and one lie</strong>!
-        </p>
+        <div class="intro-box">
+            <p class="intro">
+                Please tell us your <b>name</b>, <b>year</b>, <b>major</b>, and <b>some of your hobbies</b>.
+                In addition, to get to know everyone better, please tell us <strong>two truths and one lie</strong>!
+            </p>
+            <img src="./files/usagy.gif" alt="usagy gif" class="usagy-gif">
+        </div>
         <h2 id="collaboration">Collaboration</h2>
         <p>
             How can we improve <em>communication</em> within our group?
@@ -104,20 +127,37 @@
             <br><br>
 
             <fieldset>
-                <legend>Choose your favorite drink:</legend>
+                <legend class="drink">Choose your favorite drink:</legend>
                 <div>
                     <input type="radio" id="water" name="drink" value="water">
-                    <label for="water">Water</label>
+                    <label class="water" for="water">Water</label>
                 </div>
                 <div>
                     <input type="radio" id="tea" name="drink" value="tea">
-                    <label for="tea">Tea</label>
+                    <label class="tea" for="tea">Tea</label>
                 </div>
                 <div>
                     <input type="radio" id="coffee" name="drink" value="coffee">
-                    <label for="coffee">Coffee</label>
+                    <label class="coffee" for="coffee">Coffee</label>
+                </div>
+                <div class="juice">
+                    <input type="radio" id="juice" name="drink" value="juice">
+                    <label for="juice">Juice</label>
                 </div>
             </fieldset>
+
+            <p class="color">What's your favorite color?</p>
+            <div class="color-grid"> 
+                <button type="button" value="red" class="grid-item">Red</button>
+                <button type="button" value="orange" class="grid-item">Orange</button>
+                <button type="button" value="yellow" class="grid-item">Yellow</button>  
+                <button type="button" value="green" class="grid-item">Green</button>
+                <button type="button" value="blue" class="grid-item">Blue</button>
+                <button type="button" value="purple" class="grid-item">Purple</button>  
+                <button type="button" value="white" class="grid-item">White</button>
+                <button type="button" value="black" class="grid-item">Black</button>
+                <button type="button" value="brown" class="grid-item">Brown</button>
+            </div>
             <br><br>
 
             <label for="additionalcomments"><b>Anything else you want to let us know?</b></label>
@@ -128,13 +168,13 @@
             <button>Submit</button>
             <br><br>
         </form>
-        <label>Relax a bit!<br></label>
-        <video controls width=250 src="./waterfall.mp4">
+        <label class="relax">Relax a bit!<br></label>
+        <video controls width=250 src="./files/waterfall.mp4" class="waterfall">
         </video>
         <div><br></div>
     </main>
     <footer>
-        <span>Created by Kristy Chan<br><br></span>
+        <span class="me">Created by Kristy Chan</span>
         <details>
             <summary>Contact Me</summary>
             Email: k4chan@ucsd.edu
