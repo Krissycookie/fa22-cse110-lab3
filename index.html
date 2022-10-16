@@ -128,19 +128,19 @@
 
             <fieldset>
                 <legend class="drink">Choose your favorite drink:</legend>
-                <div>
+                <div class="water-drink">
                     <input type="radio" id="water" name="drink" value="water">
-                    <label class="water" for="water">Water</label>
+                    <label for="water">Water</label>
                 </div>
-                <div>
+                <div class="tea-drink">
                     <input type="radio" id="tea" name="drink" value="tea">
-                    <label class="tea" for="tea">Tea</label>
+                    <label for="tea">Tea</label>
                 </div>
-                <div>
+                <div class="coffee-drink">
                     <input type="radio" id="coffee" name="drink" value="coffee">
-                    <label class="coffee" for="coffee">Coffee</label>
+                    <label for="coffee">Coffee</label>
                 </div>
-                <div class="juice">
+                <div class="juice-drink">
                     <input type="radio" id="juice" name="drink" value="juice">
                     <label for="juice">Juice</label>
                 </div>
@@ -158,20 +158,21 @@
                 <button type="button" value="black" class="grid-item">Black</button>
                 <button type="button" value="brown" class="grid-item">Brown</button>
             </div>
-            <br><br>
-
-            <label for="additionalcomments"><b>Anything else you want to let us know?</b></label>
-            <br><br>
-            <textarea id="additionalcomments" name="additionalcomments" rows="5" cols="30">Tell us a little bit about yourself!
-            </textarea>
-            <br><br>
-            <button>Submit</button>
-            <br><br>
+            <div class="addcomm">
+                <label for="additionalcomments"><b>Anything else you want to let us know?</b><br><br></label>
+                <textarea id="additionalcomments" name="additionalcomments" rows="5" cols="30">Tell us a little bit about yourself!
+                </textarea>
+            </div>
+            <div class="submit">
+                <button>Submit</button>
+            </div>
         </form>
-        <label class="relax">Relax a bit!<br></label>
-        <video controls width=250 src="./files/waterfall.mp4" class="waterfall">
-        </video>
-        <div><br></div>
+
+        <div>
+            <label class="relax">Relax a bit!<br></label>
+            <video controls width=500 src="./files/waterfall.mp4" class="waterfall">
+            </video>
+        </div>
     </main>
     <footer>
         <span class="me">Created by Kristy Chan</span>

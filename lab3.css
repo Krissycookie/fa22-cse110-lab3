@@ -1,25 +1,30 @@
+/* headers */
 h1
 {
     background-color: white;
-    width:550px;
+    border-bottom:5px dotted black;
+    width:fit-content;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
+    padding-right: 20px;
 }
 h2
 {
-    background-color: rgb(255,204,204);
+    background-color: rgb(255,250,240);
     margin:20px 20px 20px 0px;
-    width: auto;
-    height: auto;
+    padding:10px 20px 10px 20px;
+    width: fit-content;
+    height: fit-content;
+    border-bottom: 2px dotted black;
 }
 h3,h4
 {
-    border: 3px solid black;
-    width:fit-content;
+    text-decoration: underline black;
+    width: fit-content;
     padding: 5px;
 }
-/*flexbox for gifs*/
+/* flexbox for gifs */
 .gif-box
 {
     display:flex;
@@ -27,17 +32,17 @@ h3,h4
     align-items: center;
     gap: 10px;
 }
-/*gifs*/
+/* gif size */
 .work
 {   
     max-width: auto;
     max-height: auto;
     margin:20px;
 }
-/*Border for Agenda */
+/* border and backgroundfor agenda */
 .agenda 
 {
-    background-color: #E0E0E0;
+    background-color: #FFF0F5;
     border-width: 5px; 
     border-style: solid; 
     border-color: #660000;
@@ -47,14 +52,14 @@ h3,h4
     margin-right: 50px;
     text-align: left;
 }
-/*agenda list*/
+/* agenda list */
 .a-list
 {
     padding-top: 20px;
 
 }
 
-/*attendance box*/
+/* attendance box display*/
 .atten-box
 {
     display:flex;
@@ -74,7 +79,7 @@ h3,h4
     margin:auto;
 }
 
-/*introduction box*/
+/* introduction box */
 .intro-box
 {
     display:flex;
@@ -98,21 +103,24 @@ h3,h4
     width: 100px;
     height: 100px;
 }
-/*Color grid*/
+
+/* color grid */
 .color
 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
+    padding-left: 5px;
+    padding-top: 10px;
 }
-
 .color-grid
 {
     display:inline-grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
     padding:10px;
+    padding-left: 5px;
 }
-
+/* font of each item in grid */
 .grid-item
 {
     border: 1px solid black;
@@ -121,43 +129,76 @@ h3,h4
     font-size: 20px;
     text-align: center;
 }
-/*Favorite drink*/
+/* make background of color grid white*/
+div button
+{
+    background:white;
+}
+/* padding and display for favorite drink fieldset*/
+fieldset > div
+{
+    padding-top:10px;
+    padding-bottom:10px;
+}
 .drink
 {
-    text-decoration: wavy underline #CCE5FF;
+    text-decoration: underline black;
     display: inline-block;
 }
-
-.water
+.water-drink
 {
     color: midnightblue;
     display: inline-block;
     padding-top: 2mm
-    
 }
-
-.tea
+.tea-drink
 {
-    color: darkgreen;
-    padding-top: 2mm
-    
+    color: darkgreen;  
 }
-
-.coffee
+div[class~="tea-drink"]
+{
+    padding-top: 2mm;
+}
+.coffee-drink
 {
     color: #663300;
     padding-top: 2mm;
 }
-
-.juice
+.juice-drink
 {
     display: none;
 }
 
-.relax
+/* padding for additional comments and submit area*/
+textarea + div
+{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+form~div
+{
+    padding-top: 20px;
+    padding-bottom:10px;
+}
+.addcomm
+{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+div.submit
+{
+    border: 5px solid #CCE5FF;
+    width:fit-content
+}
+
+/* padding and font for relaxing video */
+*.relax
 {
     height: 5rem;
     width: 5em;
+    font-family: 'Courier New', Courier, monospace;
     font-size:medium;
 }
 
@@ -166,12 +207,15 @@ h3,h4
     padding-top:20px;
     padding-bottom:20px;
 }
+
+/* set position for me */
 .me
 {
     position:relative;
     bottom:15px;
 }
 
+/* pseudo-class for button */
 button:hover
 {
     background-color:lightgray;
@@ -182,6 +226,7 @@ button:active
     background-color: darkgray;
 }
 
+/* Media query for width */
 @media (max-width:700px)
 {
     .usagy-gif
